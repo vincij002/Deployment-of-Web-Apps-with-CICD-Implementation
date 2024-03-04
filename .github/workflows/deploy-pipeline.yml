@@ -8,11 +8,11 @@ env:
    AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID}}
    AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
    AWS_REGION: us-east-1
-   TERRAFORM_ACTION: apply
+   TERRAFORM_ACTION: destroy
    GITHUB_USERNAME: vincij002
-   REPOSITORY_NAME: application-codes-11
-   WEB_FILE_ZIP: rentzone.zip
-   WEB_FILE_UNZIP: rentzone.env
+   REPOSITORY_NAME: 
+   WEB_FILE_ZIP: 
+   WEB_FILE_UNZIP: 
   
 jobs:
 # Configure AWS credentials 
