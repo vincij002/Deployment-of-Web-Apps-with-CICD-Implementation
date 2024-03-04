@@ -12,7 +12,7 @@ env:
    GITHUB_USERNAME: vincij002
    REPOSITORY_NAME: application-codes-11
    WEB_FILE_ZIP: rentzone.zip
-   WEB_FILE_UNZIP: rentzone
+   WEB_FILE_UNZIP: rentzone.env
   
 jobs:
 # Configure AWS credentials 
