@@ -272,9 +272,9 @@ jobs:
     steps:
       - name: Export environment variable values to file
         env:
-          DOMAIN_NAME: ${{ env.DOMAIN_NAME }}
-          RDS_ENDPOINT: ${{ env.RDS_ENDPOINT }}
-          ENVIRONMENT_FILE_NAME: ${{ env.ENVIRONMENT_FILE_NAME }}
+          DOMAIN_NAME: ${{ needs.deploy_aws_infrastructure.outputs.domain_name }}
+          RDS_ENDPOINT: ${{ needs.deploy_aws_infrastructure.outputs.rds_endpoint }}
+          ENVIRONMENT_FILE_NAME: ${{ needs.deploy_aws_infrastructure.outputs.environment_file_name }}
         run: |
           echo "PERSONAL_ACCESS_TOKEN=${{ secrets.PERSONAL_ACCESS_TOKEN }}" > ${{ env.ENVIRONMENT_FILE_NAME }}
           echo "GITHUB_USERNAME=${{ env.GITHUB_USERNAME }}" >> ${{ env.ENVIRONMENT_FILE_NAME }}
