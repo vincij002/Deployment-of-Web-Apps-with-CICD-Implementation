@@ -14,6 +14,8 @@ env:
    WEB_FILE_ZIP: rentzone.zip
    WEB_FILE_UNZIP: rentzone
    FLYWAY_VERSION: 10.8.1
+   ECS_CLUSTER_NAME: rentzone-dev-cluster
+   ECS_SERVICE_NAME: rentzone-dev-service
   
 jobs:
 # Configure AWS credentials 
