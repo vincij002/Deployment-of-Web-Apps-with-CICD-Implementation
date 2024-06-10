@@ -1,4 +1,4 @@
-CI/CD Pipeline for Deploying Web Apps on AWS with GitHub Actions
+CI/CD Pipeline for Deploying Web Appa on AWS with GitHub Actions
 
 
 
